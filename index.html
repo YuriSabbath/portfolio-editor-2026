@@ -10,6 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Syne:wght@700;800&display=swap"
       rel="stylesheet"
     />
+    <style>
+      /* Ajuste para o alinhamento perfeito do novo ícone nos botões */
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .float-wa svg {
+        width: 32px;
+        height: 32px;
+      }
+    </style>
   </head>
   <body>
     <div class="cursor" id="cursor"></div>
@@ -33,14 +45,27 @@
         </div>
       </div>
     </div>
-
+    <!-- botao whatsapp float -->
     <a
-      href="https://wa.me/55SEUNUMERO"
+      href="https://api.whatsapp.com/send?phone=5519996481172&text=Ol%C3%A1%2C+Yuri%21+Vi+o+seu+portf%C3%B3lio+e+gostaria+de+solicitar+um+or%C3%A7amento+para+edi%C3%A7%C3%A3o+de+v%C3%ADdeos.+Pode+me+ajudar%3F"
       class="float-wa"
       target="_blank"
-      title="WhatsApp"
-      >💬</a
+      title="Ir para Orçamento"
     >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path
+          d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+        ></path>
+      </svg>
+    </a>
 
     <nav>
       <a href="#" class="nav-logo">Yuri Gonçalves</a>
@@ -48,7 +73,9 @@
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#contato" class="nav-cta">Orçamento</a></li>
+        <li>
+          <a href="#contato" class="nav-cta">Orçamento</a>
+        </li>
       </ul>
       <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
         <span></span><span></span><span></span>
@@ -116,9 +143,7 @@
       <div class="hero-lines"></div>
       <div class="hero-photo"></div>
       <div class="hero-content">
-        <div class="hero-tag reveal">
-          Editor de Vídeo · Disponível para projetos
-        </div>
+        <div class="hero-tag reveal">Foco em Retenção e Vendas</div>
         <h1 class="reveal reveal-delay-1">
           Edição que<br />
           <span class="line2">Retém.</span><br />
@@ -126,17 +151,35 @@
           Vende.
         </h1>
         <p class="hero-sub reveal reveal-delay-2">
-          Cortes de podcast, Reels, VSL e vídeos para redes sociais. Edição
-          pensada para performance, não só para estética.
+          Transformo conteúdo bruto em vídeos de alta performance. Cortes, Reels
+          e VSLs estruturados para prender a atenção do primeiro ao último
+          segundo.
         </p>
         <div class="hero-actions reveal reveal-delay-3">
-          <a href="#contato" class="btn-primary">Solicitar Orçamento</a>
+          <a href="#contato" class="btn-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+              ></path>
+            </svg>
+            Solicitar Orçamento
+          </a>
           <a href="#portfolio" class="btn-ghost">Ver Portfólio</a>
         </div>
       </div>
       <div class="hero-stats reveal reveal-delay-2">
         <div class="stat">
-          <div class="stat-num">4<span>+</span></div>
+          <div class="stat-num">5<span>+</span></div>
           <div class="stat-label">Tipos de conteúdo</div>
         </div>
         <div class="stat">
@@ -173,16 +216,17 @@
         </div>
         <div class="about-text reveal reveal-delay-2">
           <h3>Yuri Gonçalves</h3>
-          <div class="about-role">Editor de Vídeo</div>
+          <div class="about-role">Especialista em Retenção</div>
           <p class="about-bio">
-            Editor de vídeo especializado em conteúdo para redes sociais, com
-            foco em cortes de podcast, Reels e vídeos de alta retenção. Cada
-            projeto é tratado com atenção ao timing, ao ritmo e ao que realmente
-            faz o espectador ficar até o fim.
+            Editor de vídeo focado em conteúdo para redes sociais, atuando na
+            linha de frente de cortes de podcast, Reels e materiais de
+            conversão. Cada projeto é executado com precisão técnica em timing,
+            ritmo e retenção.
             <br /><br />
-            Trabalho com criadores, podcasters e negócios que querem transformar
-            conteúdo bruto em vídeos que geram resultado de verdade — views,
-            engajamento e vendas.
+            Trabalho com criadores, podcasters e marcas que entendem que um bom
+            vídeo não é apenas estético. Ele precisa respeitar a dinâmica do
+            algoritmo, prender a atenção do público e gerar engajamento sólido e
+            vendas reais.
           </p>
           <div class="tools-title">Ferramentas & Softwares</div>
           <div class="tools-grid">
@@ -226,10 +270,9 @@
           <div>
             <div class="service-name">Cortes de Podcast</div>
             <div class="service-desc">
-              Seleciono os momentos mais fortes do episódio e transformo em
-              cortes curtos de alto impacto para TikTok, Reels e Shorts.
-              Legendas dinâmicas, gancho nos primeiros 3 segundos e timing
-              afiado.
+              Garimpo os momentos de maior retenção do episódio e transformo em
+              cortes virais para TikTok, Reels e Shorts. Estrutura validada com
+              gancho forte nos primeiros 3 segundos e legendas dinâmicas.
             </div>
             <div class="service-tags">
               <span class="service-tag">TikTok</span>
@@ -259,9 +302,9 @@
           <div>
             <div class="service-name">Reels para Negócios</div>
             <div class="service-desc">
-              Vídeos curtos e comerciais para Instagram e TikTok de negócios
-              locais, produtos e serviços. Edição rápida, textos na tela e
-              trilha que combina com a identidade da marca.
+              Vídeos curtos desenhados para marcas e negócios locais. Edição
+              assertiva, cortes secos, animações de texto na tela e sound design
+              que fortalece o branding da sua empresa.
             </div>
             <div class="service-tags">
               <span class="service-tag">Instagram</span>
@@ -292,9 +335,10 @@
           <div>
             <div class="service-name">VSL / Vídeo de Vendas</div>
             <div class="service-desc">
-              Produção completa de vídeos de venda com roteiro, narração via IA,
-              b-roll e edição. Ideal para lançamentos, produtos físicos e
-              infoprodutos que precisam converter.
+              Produção focada estritamente em conversão. Roteirização,
+              integração com narração por Inteligência Artificial, b-roll
+              imersivo e quebra de padrão visual. A melhor escolha para
+              infoprodutos e lançamentos.
             </div>
             <div class="service-tags">
               <span class="service-tag">Narração IA</span>
@@ -322,11 +366,12 @@
             </svg>
           </div>
           <div>
-            <div class="service-name">Talking Head com Legendas</div>
+            <div class="service-name">Talking Head Educacional</div>
             <div class="service-desc">
-              Edição de vídeos de câmera única com cortes nos silêncios,
-              legendas animadas, b-roll complementar e elementos na tela.
-              Perfeito para criadores educativos, coaches e especialistas.
+              Ajuste fino em vídeos gravados de câmera única. Limpeza de
+              respirações, cortes secos para acelerar o ritmo, inserção de
+              gráficos e legendas animadas. O formato ideal para especialistas e
+              coaches.
             </div>
             <div class="service-tags">
               <span class="service-tag">YouTube</span>
@@ -605,11 +650,12 @@
           class="section-title reveal reveal-delay-1"
           style="font-size: clamp(40px, 5vw, 72px)"
         >
-          PRONTO PARA<br />COMEÇAR?
+          ELEVE O NÍVEL DO<br />SEU CONTEÚDO.
         </div>
         <p class="contact-text reveal reveal-delay-2">
-          Se precisas de edição que entrega resultado de verdade, bora
-          conversar. Atendimento direto e personalizado via WhatsApp.
+          A edição é o principal filtro entre o seu material gravado e o
+          engajamento do seu público. Vamos estruturar os seus próximos vídeos
+          para garantir máxima performance.
         </p>
         <div class="contact-benefits reveal reveal-delay-2">
           <div class="benefit">
@@ -658,12 +704,6 @@
     <footer>
       <div class="footer-logo">Yuri Gonçalves</div>
       <div class="footer-copy">© 2026 · Todos os direitos reservados</div>
-      <!-- <div class="footer-links">
-        <a href="https://www.tiktok.com/@cortes_upgrade" target="_blank"
-          >TikTok</a
-        >
-        <a href="#" target="_blank">Instagram</a>
-      </div> -->
     </footer>
 
     <script>
@@ -681,8 +721,8 @@
       });
 
       function animateRing() {
-        rx += (mx - rx) * 0.12;
-        ry += (my - ry) * 0.12;
+        rx += (mx - rx) * 0.3;
+        ry += (my - ry) * 0.3;
         ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%,-50%)`;
         requestAnimationFrame(animateRing);
       }
@@ -692,7 +732,6 @@
         .querySelectorAll('a, button, .portfolio-card, .service-item')
         .forEach((el) => {
           el.addEventListener('mouseenter', () => {
-            cursor.style.transform += ' scale(1.8)';
             ring.style.width = '60px';
             ring.style.height = '60px';
           });
